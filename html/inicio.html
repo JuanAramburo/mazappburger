@@ -65,15 +65,25 @@
                 <img src="/img/favorite.png" alt="Favorites">
             </button>
             <button class="nav-btn main-btn">
-                <img src="/img/menu.png" alt="Add">
+                <img src="/img/menu.png" alt="Add" id="btnMenu">
             </button>
             <button class="nav-btn">
                 <img src="/img/carrito-de-compras.png" alt="Cart">
             </button>
             <button class="nav-btn">
-                <img src="/img/user.png" alt="Profile">
+                <img src="/img/user.png" alt="Profile" id="btnPerfil">
             </button>
         </nav>
     </footer>
 </body>
 </html>
+<script>
+    document.getElementById('btnMenu').addEventListener('click', function(event) {
+      event.preventDefault(); // Evita el comportamiento por defecto del botón (enviar el formulario)
+      window.location.href = '/html/menu.html';
+    });
+    document.getElementById('btnPerfil').addEventListener('click', function(event) {
+      event.preventDefault(); // Evita el comportamiento por defecto del botón (enviar el formulario)
+      window.location.href = '/html/cuenta.html';
+    });
+  </script>
