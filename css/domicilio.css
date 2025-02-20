@@ -87,7 +87,6 @@ section {
     align-items: center;
     justify-content: center;
     padding: 20px;
-
 }
 
 .inptel{
@@ -108,6 +107,7 @@ section {
     border: none;
     background-color: #414141;
     color: white;
+    box-shadow: 2px 2px black;
 }
 
 .burger-card {
@@ -120,6 +120,7 @@ section {
     justify-content: space-evenly;
     align-items: center;
     width: 500px;
+    box-shadow: 2px 2px 2px 2px black;
 }
 
 .search{
@@ -146,6 +147,7 @@ section {
     margin: auto;
     gap: 10px;
     margin: 20px;
+    box-shadow: 2px 2px black;
 }
 
 .order-button{
@@ -154,6 +156,7 @@ section {
     height: 40px;
     border: none;
     background-color: #FF9F0D;
+    box-shadow: 2px 2px black;
 }
 
 button:hover{

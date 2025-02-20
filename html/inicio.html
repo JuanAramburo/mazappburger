@@ -9,7 +9,7 @@
 <body>
     <header>
         <br><br>
-        <h1>Inicio</h1>
+        <img src="/img/logo.png" alt="logo" class="logo">
         <br><br>
         <div class="location">
            <img src="/img/Ubuicacion.png" alt="Ubicación">
@@ -22,7 +22,7 @@
             <div class="burger-info">
                 <h2>Entrega a domicilio</h2>
                 <br>
-                <button class="order-btn">Tomar orden →</button>
+                <button class="order-btn" id="btnDomicilio">Tomar orden →</button>
             </div>
             <div class="burger-image">
                 <img src="/img/repartidor.png" alt="Cheese Burger">
@@ -33,7 +33,7 @@
             <div class="burger-info">
                 <h2>Mostrador</h2>
                 <br>
-                <button class="order-btn">Tomar orden →</button>
+                <button class="order-btn" id="btnMostrador">Tomar orden →</button>
             </div>
             <div class="burger-image">
                 <img src="/img/mostrador.png" alt="Classic Burger">
@@ -44,14 +44,10 @@
     <footer>
         <nav class="bottom-nav">
             <button class="nav-btn">
-                <img src="/img/home.png" alt="Home">
-            </button>
-            <button class="nav-btn main-btn">
-                <img src="/img/menu-blanco.png" alt="Add" id="btnMenu">
+                <img src="/img/boleto (1).png" alt="ticket" id="btnPedidos">
             </button>
             <button class="nav-btn">
-                <img src="/img/icons8-avion-de-papel-50.png" alt="Cart">
-                <span>0</span>
+                <img src="/img/icons8-mensajes-50 (1).png" alt="ticket" id="btnPedidos">
             </button>
             <button class="nav-btn">
                 <img src="/img/user.png" alt="Profile" id="btnPerfil">
@@ -61,12 +57,20 @@
 </body>
 </html>
 <script>
-    document.getElementById('btnMenu').addEventListener('click', function(event) {
+    document.getElementById('btnPedidos').addEventListener('click', function(event) {
       event.preventDefault(); // Evita el comportamiento por defecto del botón (enviar el formulario)
-      window.location.href = '/html/menu.html';
+      window.location.href = '/html/pedidos.html';
     });
     document.getElementById('btnPerfil').addEventListener('click', function(event) {
       event.preventDefault(); // Evita el comportamiento por defecto del botón (enviar el formulario)
       window.location.href = '/html/cuenta.html';
+    });
+    document.getElementById('btnDomicilio').addEventListener('click', function(event) {
+      event.preventDefault(); // Evita el comportamiento por defecto del botón (enviar el formulario)
+      window.location.href = '/html/domicilio.html';
+    });
+    document.getElementById('btnMostrador').addEventListener('click', function(event) {
+      event.preventDefault(); // Evita el comportamiento por defecto del botón (enviar el formulario)
+      window.location.href = '/html/mostrador.html';
     });
   </script>

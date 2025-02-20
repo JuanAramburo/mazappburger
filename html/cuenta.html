@@ -24,15 +24,9 @@
             </div>
         </div>
 
-        <div class="wallet">
-            <button class="menu-item"><img src="/img/billetera.png" alt=""> Cartera</button>
-            <button class="menu-item"><img src="/img/icons8-tarjeta-de-fidelidad-50.png" alt=""> Cupones</button>
-        </div>
-
         <nav class="menu">
-            <button class="menu-item"><img src="/img/corazon amarillo.png" alt=""> Favoritas</button>
-            <button class="menu-item"><img src="/img/icons8-recibo-50.png" alt=""> Pedidos</button>
-            <button class="menu-item"><img src="/img/icons8-servicio-al-cliente-50.png" alt=""> Atención al Cliente</button>
+            <button class="menu-item"><img src="/img/icons8-recibo-50.png" alt=""> Reportes</button>
+            <button class="menu-item"><img src="/img/icons8-servicio-al-cliente-50.png" alt=""> Editar Menu</button>
             <button class="menu-item"><img src="/img/icons8-configuración-50.png" alt=""> Configuración</button>
             <button class="menu-item"><img src="/img/icons8-cerrar-sesión-50.png" alt=""> Cerrar sesión</button>
         </nav>
@@ -40,22 +34,23 @@
         <footer>
             <nav class="bottom-nav">
                 <button class="nav-btn">
-                    <img src="/img/home.png" alt="Home">
+                    <img src="/img/casa.png" alt="ticket" id="btnInicio">
                 </button>
                 <button class="nav-btn">
-                    <img src="/img/favorite.png" alt="Favorites">
-                </button>
-                <button class="nav-btn main-btn">
-                    <img src="/img/menu.png" alt="Add" id="btnMenu">
-                </button>
-                <button class="nav-btn">
-                    <img src="/img/carrito-de-compras.png" alt="Cart">
-                </button>
-                <button class="nav-btn">
-                    <img src="/img/user.png" alt="Profile">
+                    <img src="/img/boleto (1).png" alt="ticket" id="btnPedidos">
                 </button>
             </nav>
         </footer>
     </div>
 </body>
 </html>
+<script>
+    document.getElementById('btnInicio').addEventListener('click', function(event) {
+      event.preventDefault(); // Evita el comportamiento por defecto del botón (enviar el formulario)
+      window.location.href = '/html/inicio.html';
+    });
+    document.getElementById('btnPedidos').addEventListener('click', function(event) {
+      event.preventDefault(); // Evita el comportamiento por defecto del botón (enviar el formulario)
+      window.location.href = '/html/pedidos.html';
+    });
+  </script>

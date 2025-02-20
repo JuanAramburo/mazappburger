@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burger App</title>
+    <title>Domicilio</title>
     <link rel="stylesheet" href="/css/domicilio.css">
 </head>
 <body>
     <header>
-        <button class="back-button" id="btnBack"><img src="/img/casa.png" alt="flecha" class="flecha"></button>
+        <h1>Domicilio</h1>
     </header>
-    <h1>Domicilio</h1>
+
 
     <section>
         <div class="burger-card">
@@ -20,13 +20,13 @@
 
         <div class="delivery">
             <span>Telefono</span>
-            <input type="text" name="" id="" class="inp">
+            <input type="text" name="" id="" class="inp" required>
             <span>Nombre</span>
-            <input type="text" name="" id="" class="inp">
+            <input type="text" name="" id="" class="inp" required>
             <span>Calle</span>
-            <input type="text" name="" id="" class="inp">
-            <span>Numero</span>
-            <input type="text" name="" id="" class="inp">
+            <input type="text" name="" id="" class="inp"required>
+            <span>Numero de casa</span>
+            <input type="text" name="" id="" class="inp" required>
             <span>Int.</span>
             <input type="text" name="" id="" class="inp">
             <span>Entre Calles</span>
@@ -39,12 +39,26 @@
         </div>
 
     </section>
+    <br><br><br><br><br>
+    <footer>
+        <nav class="bottom-nav">
+            <button class="nav-btn">
+                <img src="/img/casa.png" alt="ticket" id="btnInicio">
+            </button>
+            <button class="nav-btn">
+                <img src="/img/icons8-mensajes-50 (1).png" alt="ticket" id="btnPedidos">
+            </button>
+            <button class="nav-btn">
+                <img src="/img/user.png" alt="Profile" id="btnPerfil">
+            </button>
+        </nav>
+    </footer>
 </body>
 </html>
 <script>
-    document.getElementById('btnMenu').addEventListener('click', function(event) {
+    document.getElementById('btnInicio').addEventListener('click', function(event) {
       event.preventDefault(); // Evita el comportamiento por defecto del botón (enviar el formulario)
-      window.location.href = '/html/menu.html';
+      window.location.href = '/html/inicio.html';
     });
     document.getElementById('btnPerfil').addEventListener('click', function(event) {
       event.preventDefault(); // Evita el comportamiento por defecto del botón (enviar el formulario)
