@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger App</title>
+    <link rel="stylesheet" href="/css/domicilio.css">
+</head>
+<body>
+    <header>
+        <button class="back-button" id="btnBack"><img src="/img/casa.png" alt="flecha" class="flecha"></button>
+    </header>
+    <h1>Domicilio</h1>
+
+    <section>
+        <div class="burger-card">
+            <input type="text" name="" id="" placeholder="Buscar telefono" class="inptel">
+            <button class="search"><img src="/img/buscar (1).png" alt="" class="imagen"></button>
+        </div>
+
+        <div class="delivery">
+            <span>Telefono</span>
+            <input type="text" name="" id="" class="inp">
+            <span>Nombre</span>
+            <input type="text" name="" id="" class="inp">
+            <span>Calle</span>
+            <input type="text" name="" id="" class="inp">
+            <span>Numero</span>
+            <input type="text" name="" id="" class="inp">
+            <span>Int.</span>
+            <input type="text" name="" id="" class="inp">
+            <span>Entre Calles</span>
+            <input type="text" name="" id="" class="inp">
+        </div>
+
+        <div class="orden">
+            <button class="order-button">Guardar Cliente</button>
+            <button class="order-button">Ir al Menu</button>
+        </div>
+
+    </section>
+</body>
+</html>
+<script>
+    document.getElementById('btnMenu').addEventListener('click', function(event) {
+      event.preventDefault(); // Evita el comportamiento por defecto del botón (enviar el formulario)
+      window.location.href = '/html/menu.html';
+    });
+    document.getElementById('btnPerfil').addEventListener('click', function(event) {
+      event.preventDefault(); // Evita el comportamiento por defecto del botón (enviar el formulario)
+      window.location.href = '/html/cuenta.html';
+    });
+  </script>

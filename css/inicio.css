@@ -14,6 +14,7 @@ body {
 /* Center Header */
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -26,11 +27,6 @@ header {
     display: flex;
     justify-content: space-between;
     color: #FFFFFF;
-}
-
-/* Navigation */
-nav {
-    padding: 15px;
 }
 
 .delivery-options {
@@ -108,6 +104,11 @@ main {
     cursor: pointer;
 }
 
+button:hover{
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
 /* Bottom Navigation */
 .bottom-nav {
     position: fixed;
@@ -134,10 +135,7 @@ main {
 }
 
 .main-btn {
-    background-color: #dddddd;
-    border-radius: 50%;
     padding: 15px;
-    transform: translateY(-20px);
 }
 
 /* Responsive Styles for 500px or less */
