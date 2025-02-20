@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger App</title>
+    <link rel="stylesheet" href="/css/domicilio.css">
+</head>
+<body>
+    <header>
+        <button class="back-button" id="btnBack"><img src="/img/casa.png" alt="flecha" class="flecha"></button>
+    </header>
+    <h1>Mostrador</h1>
+
+    <section>
+        <div class="burger-card">
+            <span>Nombre:</span>
+            <input type="text" name="" id="" placeholder="Buscar telefono" class="inptel">
+        </div>
+
+        <div class="orden">
+            <button class="order-button">Guardar e ir al menu</button>
+        </div>
+
+    </section>
+</body>
+</html>
+<script>
+    document.getElementById('btnMenu').addEventListener('click', function(event) {
+      event.preventDefault(); // Evita el comportamiento por defecto del botón (enviar el formulario)
+      window.location.href = '/html/menu.html';
+    });
+    document.getElementById('btnPerfil').addEventListener('click', function(event) {
+      event.preventDefault(); // Evita el comportamiento por defecto del botón (enviar el formulario)
+      window.location.href = '/html/cuenta.html';
+    });
+  </script>
